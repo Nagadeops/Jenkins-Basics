@@ -44,7 +44,7 @@
  
   # How do you want feedback on this Job?
     Email →  Plugins → Email extension Plugins or Mailer Plugins
-    Chat → Plugins →  Jabbar, Cisco comm, Slack, Skype Enterprise
+    Chat → Plugins →  Slack, Skype Enterprise
     Dashboard → Pipeline, Admin of Jenkins, 
 
   
