@@ -1,5 +1,8 @@
 pipeline{
   agent any
+  tools {
+        maven 'maven-3' // Define Maven version here
+    }
   stages {
     stage ('SCM Checkout') {
       steps {
@@ -9,8 +12,13 @@ pipeline{
     stage ('Compile-Package') {
       steps {
         // Get maven home path
-        def mvnHome =  tool name: 'maven-3', type: 'maven'   
-        sh "${mvnHome}/bin/mvn package"
+       // def mvnHome =  tool name: 'maven-3', type: 'maven'   
+        sh 'mvn clean install'
+      }
+    }
+    stage('Test') {
+      steps {
+                sh 'mvn test'
       }
     }
     stage ('Email Notification') {
