@@ -1,5 +1,4 @@
-# To create a Jenkins setup where a freestyle job is either an upstream or downstream project, you can configure job
-#  triggers that build dependent jobs. Here’s how you can create this setup:
+# To create a Jenkins setup where a freestyle job is either an upstream or downstream project, you can configure job triggers that build     dependent jobs. Here’s how you can create this setup:
 
 # Scenario:
   Upstream Project: A job that triggers another job.
