@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage ('SCM Checkout') {
       steps {
-        git 'https://github.com/Nagadeops/myapp'
+        git 'https://github.com/Nagadeops/Jenkins-Basics/myapp'
       }
     }
     stage ('Compile-Package') {
